@@ -84,3 +84,51 @@
 .nice-font h6 {
   font-weight: 900;
 }
+
+@media (max-width: 768px) {
+  .nice-font h1,
+  .nice-font h2,
+  .nice-font h3,
+  .nice-font h4,
+  .nice-font h5,
+  .nice-font h6 {
+    font-size: 2em;
+  }
+  .nice-font pre {
+    font-size: 1.7em;
+    width: 100%;
+
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
+  .nice-font pre strong {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 320px) {
+  .nice-font h1,
+  .nice-font h2,
+  .nice-font h3,
+  .nice-font h4,
+  .nice-font h5,
+  .nice-font h6 {
+    font-size: 3em;
+  }
+  .nice-font pre {
+    font-size: 2.5em;
+    width: 100%;
+
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
+  .nice-font pre strong {
+    font-size: 2em;
+  }
+}

@@ -33,6 +33,13 @@ body::-webkit-scrollbar-thumb {
   margin-top: 80px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;

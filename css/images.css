@@ -19,3 +19,11 @@
   min-width: 100%;
   height: auto;
 }
+
+
+@media (max-width: 768px) {
+  .profile-pic {
+    height: 20vw;
+    width: 20vw;
+  }
+}
