@@ -30,6 +30,7 @@ body::-webkit-scrollbar-thumb {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 80px;
 }
 
 @media (min-width: 768px) {
