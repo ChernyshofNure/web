@@ -11,6 +11,10 @@
   color: white;
 }
 
+body {
+  padding-bottom: 60px;
+}
+
 body::-webkit-scrollbar {
   width: 7px;
 }
