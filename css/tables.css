@@ -1,0 +1,33 @@
+.info {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 1em 1em 1em black;
+  background: #292B2E;
+  display: block;
+}
+
+.info tr:nth-child(even) td {
+  background-color: #212121;
+}
+
+.info th, .info td {
+  background: #292B2E;
+  padding: 5px;
+  text-align: left;
+  border: 2px dashed #ccc;
+  width: 33%;
+}
+
+.info ol, .info ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10%;
+}
+
+.info dl {
+  margin-top: 0;
+}
+
+.info dd {
+  margin-left: 2%;
+}

@@ -1,0 +1,85 @@
+.nice-font {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-size: 1.5vw;
+}
+
+.nice-font .title {
+  text-align: center;
+  letter-spacing: 1.2vw;
+}
+
+.nice-font i,
+.nice-font b,
+.nice-font ol,
+.nice-font ul,
+.nice-font dt,
+.nice-font dd,
+.nice-font dl,
+.nice-font li {
+  background: none;
+}
+
+.nice-font .title:before {
+  content: "[";
+}
+
+.nice-font .title:after {
+  content: "]";
+}
+
+.nice-font a {
+  color: #296D76;
+  display: inline-block;
+}
+
+.nice-font a:hover {
+  color: white;
+  background: #6E5D8E;
+}
+
+.nice-font pre {
+  display: block;
+  background: #292B2E;
+  margin-top: 10%;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1vw;
+  counter-reset: line;
+  box-shadow: 1em 1em 1em black;
+}
+
+.nice-font pre span {
+  background: #292B2E;
+}
+
+.nice-font pre a,
+.nice-font pre b,
+.nice-font pre strong {
+  background: #292B2E;
+}
+
+.nice-font pre b {
+  color: #237EAD;
+}
+
+.nice-font pre strong {
+  font-size: 1.2vw;
+  color: #B45377;
+}
+
+.nice-font pre span:before {
+  counter-increment: line;
+  content: counter(line);
+  padding: 0 .5em;
+  margin-right: .5em;
+}
+
+.nice-font h1,
+.nice-font h2,
+.nice-font h3,
+.nice-font h4,
+.nice-font h5,
+.nice-font h6 {
+  font-weight: 900;
+}

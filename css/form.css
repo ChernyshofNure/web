@@ -1,0 +1,39 @@
+form.blog {
+  padding: 1em;
+  background: #292B2E;
+  box-shadow: 1em 1em 1em black;
+}
+
+form.blog input, form.blog textarea {
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px dashed white;
+  background: #292B2E;
+  outline: none;
+  width: 100%
+}
+
+form.blog input[type="submit"] {
+  padding: 0.5em 2em;
+  border: 1px dashed white;
+}
+
+form.blog textarea {
+  border-top: none;
+}
+
+form.blog textarea::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+ 
+form.blog textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+form.blog textarea::-webkit-scrollbar-thumb {
+  background-color: #6E5D8E;
+  border-radius: 15px;
+  outline: 1px solid slategrey;
+}
