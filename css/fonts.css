@@ -41,6 +41,7 @@
 .nice-font pre {
   display: block;
   background: #292B2E;
+  border-radius: 5px;
   margin-top: 10%;
   text-align: left;
   font-family: 'Open Sans', sans-serif;

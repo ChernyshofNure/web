@@ -4,6 +4,8 @@
   box-shadow: 1em 1em 1em black;
   background: #292B2E;
   display: block;
+  padding: 1em;
+  border-radius: 5px;
 }
 
 .info tr:nth-child(even) td {
@@ -14,7 +16,7 @@
   background: #292B2E;
   padding: 5px;
   text-align: left;
-  border: 2px dashed #ccc;
+  border: 0.2vw dashed #ccc;
   width: 33%;
 }
 

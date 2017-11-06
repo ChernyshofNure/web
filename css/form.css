@@ -2,6 +2,7 @@ form.blog {
   padding: 1em;
   background: #292B2E;
   box-shadow: 1em 1em 1em black;
+  border-radius: 5px;
 }
 
 form.blog input, form.blog textarea {
