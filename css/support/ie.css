@@ -1,6 +1,4 @@
-#menuToggle input[type="checkbox"],
-#menuToggle .hamburger,
-#menuToggle .shadow
+#menuToggle input[type="checkbox"]
 {
   display: none !important;
 }
