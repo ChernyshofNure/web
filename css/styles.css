@@ -1,10 +1,10 @@
 @import 'fonts.css';
-@import 'headings.css';
 @import 'menu.css';
 @import 'tables.css';
 @import 'images.css';
 @import 'form.css';
 @import 'social.css';
+@import 'support/print.css';
 
 *, body {
   background: #5D4D7A;
@@ -58,8 +58,4 @@ body::-webkit-scrollbar-thumb {
   .container {
     width: 52%;
   }
-}
-
-img {
-  max-width: 20%;
 }

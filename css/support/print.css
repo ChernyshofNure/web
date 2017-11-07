@@ -1,0 +1,18 @@
+/* Background
+ @media print and (color) {
+   {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+} */ 
+
+@media print {
+  #menuToggle {
+    display: none !important;
+  }
+
+  #menu {
+    font-size: 50px !important;
+    display: none !important;
+  }
+}
