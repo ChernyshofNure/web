@@ -12,7 +12,23 @@
   }
 
   #menu {
-    font-size: 50px !important;
     display: none !important;
+  }
+
+  .social a {
+    border-color: black;
+    color: black;
+  }
+
+  form.blog {
+    box-shadow: none;
+  }
+
+  .nice-font pre {
+    box-shadow: none;
+  }
+
+  .info {
+    box-shadow: none;
   }
 }

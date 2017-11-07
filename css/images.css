@@ -1,32 +1,16 @@
-.profile-pic {
-  height: 10vw;
-  width: 10vw;
-  border-radius: 50%;
+img.profile-pic {
+  display: block;
   margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.profile-pic img {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: 0;
-  right: 0;
-  min-width: 100%;
-  max-width: 20%;
+  width: auto;
+  max-width: 10vw;
   height: auto;
+  max-height: 10vw;
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
-  .profile-pic {
-    height: 20vw;
-    width: 20vw;
+  img.profile-pic {
+    max-height: 20vw;
+    max-width: 20vw;
   }
-}
-
-@media print {
 }
