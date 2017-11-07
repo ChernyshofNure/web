@@ -2,15 +2,15 @@ img.profile-pic {
   display: block;
   margin: 0 auto;
   width: auto;
-  max-width: 10vw;
+  max-width: 30%;
   height: auto;
-  max-height: 10vw;
+  max-height: 200px;
   border-radius: 50%;
 }
 
 @media (max-width: 768px) {
   img.profile-pic {
-    max-height: 20vw;
-    max-width: 20vw;
+    max-height: 300px;
+    max-width: 40%;
   }
 }
