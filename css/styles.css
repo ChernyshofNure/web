@@ -5,6 +5,7 @@
 @import 'form.css';
 @import 'social.css';
 @import 'support/print.css';
+@import 'nav.css';
 
 *, body {
   background: #5D4D7A;

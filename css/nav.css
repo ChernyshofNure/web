@@ -1,0 +1,16 @@
+#hint {
+  position: fixed;
+  top: 30px;
+  left: 45%;
+  background: #292B2E;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px 1px #666;
+  animation: hintmove 1.5s infinite;
+}
+
+
+@keyframes hintmove {
+  from {margin-top: 0px;}
+  to {margin-top: 1px;box-shadow: none;}
+}
