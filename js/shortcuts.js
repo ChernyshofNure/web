@@ -26,7 +26,11 @@ function menuLinksKeyUp(e) {
 
 function menuKeyUp(e) {
   var x = document.getElementById("menucheck");
-  if (e.keyCode == 32) {
+
+  var isTyping = document.activeElement.id === 'input';
+  
+
+  if (e.keyCode == 32 && !isTyping) {
     x.checked = !x.checked;
   }
 }
