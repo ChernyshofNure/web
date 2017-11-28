@@ -7,3 +7,4 @@ function dynamicallyLoadScript(url) {
 
 dynamicallyLoadScript('js/hint.js')
 dynamicallyLoadScript('js/shortcuts.js')
+dynamicallyLoadScript('js/spoilers.js')
