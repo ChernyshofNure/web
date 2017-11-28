@@ -1,14 +1,83 @@
 img.profile-pic {
   display: block;
   margin: 0 auto;
-  width: 20vw;
-  height: 20vw;
+  width: 20vh;
+  height: 20vh;
   border-radius: 50%;
 }
 
+/*
 @media (max-width: 768px) {
   img.profile-pic {
     max-height: 300px;
     max-width: 40%;
   }
+}
+*/
+
+#image {
+  cursor: pointer;
+  transition: width 0.3s, height 0.3s, border-radius 0.3s;
+}
+
+#imagePreview {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 30vw;
+  width: 30vw;
+  margin-top: -15vw;
+  margin-left: -15vw;
+  border-radius: 0;
+  z-index: 2;
+  transition: width 0.3s, height 0.3s, border-radius 0.3s;
+}
+
+#imagePreview ~ #previewShadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+  cursor: pointer;
+}
+
+#imagePreview ~ .fakeImage {
+  margin: 0 auto;
+  width: 20vw;
+  height: 22vw;
+}
+
+#image ~ #previewShadow .close {
+  display: none;
+}
+
+#imagePreview ~ #previewShadow .close {
+  position: absolute;
+  padding: 5px;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+}
+#imagePreview ~ #previewShadow .close:hover {
+  opacity: 1;
+}
+#imagePreview ~ #previewShadow .close:before, .close:after {
+  position: absolute;
+  left: 20px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+#imagePreview ~ #previewShadow .close:before {
+  transform: rotate(45deg);
+}
+#imagePreview ~ #previewShadow .close:after {
+  transform: rotate(-45deg);
 }

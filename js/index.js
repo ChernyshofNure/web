@@ -1,10 +1,11 @@
 function dynamicallyLoadScript(url) {
-    var script = document.createElement("script"); // Make a script DOM node
-    script.src = url; // Set it's src to the provided URL
+    var script = document.createElement("script");
+    script.src = url;
 
-    document.head.appendChild(script); // Add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+    document.head.appendChild(script);
 }
 
 dynamicallyLoadScript('js/hint.js')
 dynamicallyLoadScript('js/shortcuts.js')
 dynamicallyLoadScript('js/spoilers.js')
+dynamicallyLoadScript('js/image_preview.js')
