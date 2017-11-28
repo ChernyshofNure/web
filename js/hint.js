@@ -1,10 +1,19 @@
 function renderHint() {
-  var x = document.getElementById("hint");
-  if (x.style.display === "none") {
-      x.style.display = "inline-block";
+  var hint = document.getElementById("hint");
+  if (hint.style.display === "none") {
+      hint.style.display = "inline-block";
   } else {
-      x.style.display = "none";
+      hint.style.display = "none";
   }
+}
+
+function hideHintOnCheck() {
+  let checkbox = document.getElementById("menucheck");
+  let hint = document.getElementById("hint");
+  checkbox.addEventListener('change', function() {
+    localStorage.setItem('is_space_pressed', true);
+    hint.style.display = "none";
+  });
 }
 
 function hideHint(e) {
@@ -20,8 +29,12 @@ function checkHint() {
 
   if (!is_pressed) {
     document.addEventListener('keyup', hideHint, false);
+    hideHintOnCheck();
     renderHint();
   }
+
 }
+
+// Remove hint if menu's checkbox triggered
 
 checkHint()

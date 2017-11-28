@@ -1,5 +1,5 @@
 function menuLinksKeyUp(e) {
-  var is_checked = document.getElementById("menucheck").checked;
+  let is_checked = document.getElementById("menucheck").checked;
   if (is_checked) {
     switch (e.keyCode) {
       case 49:
@@ -32,6 +32,8 @@ function menuKeyUp(e) {
 
   if (e.keyCode == 32 && !isTyping) {
     x.checked = !x.checked;
+  } else if (e.keyCode == 27 && x.checked && !isTyping) {
+    x.checked = !x.checked;
   }
 }
 
@@ -44,3 +46,7 @@ checkbox.addEventListener('keyup', preventDefaultKeyUp, true);
 
 document.addEventListener('keyup', menuKeyUp, false);
 document.addEventListener('keyup', menuLinksKeyUp, false);
+
+window.onkeydown = function(e) { 
+    return !(e.keyCode == 32);
+};
