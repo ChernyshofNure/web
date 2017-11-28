@@ -1,10 +1,8 @@
 img.profile-pic {
   display: block;
   margin: 0 auto;
-  width: auto;
-  max-width: 30%;
-  height: auto;
-  max-height: 200px;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
 }
 
