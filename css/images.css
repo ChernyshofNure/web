@@ -98,3 +98,52 @@
 #imagePreview[src]:not([src=""]) ~ #previewShadow .close:after {
   transform: rotate(-45deg);
 }
+
+
+.arrowblock {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrowcarousel {
+  border: solid black;
+  border-width: 0 1vw 1vw 0;
+  border-color: white;
+  display: inline-block;
+  padding: 1vw;
+}
+
+.arrowcarousel.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrowcarousel.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.preview_arrowblock {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  background: none;
+  cursor: pointer;
+}
+
+.preview_arrowblock.right {
+  top: 50%;
+  right: 50%;
+  margin-right: -20vw;
+}
+
+.preview_arrowblock.left {
+  top: 50%;
+  left: 50%;
+  margin-left: -20vw;
+}
+
+#imagePreview[src]:not([src=""]) ~ .preview_arrowblock {
+  display: inline-block;
+}
