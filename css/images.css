@@ -1,10 +1,10 @@
-img.profile-pic {
+/* img.profile-pic {
   display: block;
   margin: 0 auto;
   width: 20vh;
   height: 20vh;
   border-radius: 50%;
-}
+}*/
 
 /*
 @media (max-width: 768px) {
@@ -15,12 +15,31 @@ img.profile-pic {
 }
 */
 
-#image {
-  cursor: pointer;
-  transition: width 0.3s, height 0.3s, border-radius 0.3s;
+.images {
+  margin: 0 auto;
+  text-align: center;
 }
 
-#imagePreview {
+.image {
+  cursor: pointer;
+  margin-right: 10px;
+  transition: width 0.1s, height 0.1s, border-radius 0.1s;
+  display: inline-block;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+}
+
+.image#profile-pic2 {
+  width: 20vh;
+  height: 20vh;
+}
+
+/* #preview {
+  display: none;
+}*/
+
+#imagePreview[src]:not([src=""]) {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -30,10 +49,17 @@ img.profile-pic {
   margin-left: -15vw;
   border-radius: 0;
   z-index: 2;
-  transition: width 0.3s, height 0.3s, border-radius 0.3s;
+  transition: width 0.1s, height 0.1s, border-radius 0.1s;
 }
 
-#imagePreview ~ #previewShadow {
+#imagePreview[src=""] {
+  display: none;
+}
+#imagePreview[src=""] ~ #previewShadow {
+  display: none;
+}
+
+#imagePreview[src]:not([src=""]) ~ #previewShadow {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -45,17 +71,7 @@ img.profile-pic {
   cursor: pointer;
 }
 
-#imagePreview ~ .fakeImage {
-  margin: 0 auto;
-  width: 20vw;
-  height: 22vw;
-}
-
-#image ~ #previewShadow .close {
-  display: none;
-}
-
-#imagePreview ~ #previewShadow .close {
+#imagePreview[src]:not([src=""]) ~ #previewShadow .close {
   position: absolute;
   padding: 5px;
   right: 32px;
@@ -64,10 +80,11 @@ img.profile-pic {
   height: 32px;
   border-radius: 5px;
 }
-#imagePreview ~ #previewShadow .close:hover {
+#imagePreview[src]:not([src=""]) ~ #previewShadow .close:hover {
   opacity: 1;
 }
-#imagePreview ~ #previewShadow .close:before, .close:after {
+#imagePreview[src]:not([src=""]) ~ #previewShadow .close:before,
+#imagePreview[src]:not([src=""]) ~ #previewShadow .close:after {
   position: absolute;
   left: 20px;
   content: ' ';
@@ -75,9 +92,9 @@ img.profile-pic {
   width: 2px;
   background-color: white;
 }
-#imagePreview ~ #previewShadow .close:before {
+#imagePreview[src]:not([src=""]) ~ #previewShadow .close:before {
   transform: rotate(45deg);
 }
-#imagePreview ~ #previewShadow .close:after {
+#imagePreview[src]:not([src=""]) ~ #previewShadow .close:after {
   transform: rotate(-45deg);
 }
