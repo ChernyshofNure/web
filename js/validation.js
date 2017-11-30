@@ -15,17 +15,21 @@ function toggleSubmitDisabled(is_disabled) {
 
 function renderRemoveError(id) {
   let error = document.getElementById(`${id}_error`);
-  let input = document.getElementsByName(id)[0];
   error.style = 'display: none;';
+  error.innerHTML = ''
+
+  let input = document.getElementsByName(id)[0];
+  console.log(input);
   input.style = 'border-color: white;';
 }
 
 function renderError(id, message) {
   let error = document.getElementById(`${id}_error`);
-  let input = document.getElementsByName(id)[0];
   error.style = 'display: block;';
+  error.innerHTML = `^ ${message}`
+
+  let input = document.getElementsByName(id)[0];
   input.style = 'border-color: #ce537a;';
-  // error.
 }
 
 function removeError(id) {
