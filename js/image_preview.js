@@ -1,6 +1,6 @@
 let isPreviewing = false;
 let imagesUrls = [
-  'koncha.png',
+  'konichiwa.png',
   'tpfufun.jpg',
   'vohiyo.png',
   'punoko.png',
