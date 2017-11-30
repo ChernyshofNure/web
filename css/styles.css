@@ -7,11 +7,15 @@
 @import 'support/print.css';
 @import 'nav.css';
 
+
 *, body {
   color: white;
 }
 
 body {
+  transition: all 0.5s;
+  margin-top: -30px;
+  opacity: 0;
   background: #5D4D7A;
   padding-bottom: 30px;
 }
