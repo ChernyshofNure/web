@@ -48,5 +48,14 @@ document.addEventListener('keyup', menuKeyUp, false);
 document.addEventListener('keyup', menuLinksKeyUp, false);
 
 window.onkeydown = function(e) { 
-    return !(e.keyCode == 32);
+  if (e.keyCode == 32) {
+    var isTyping = document.activeElement.id === 'input';
+    console.log(isTyping);
+    if (isTyping)
+      return true;
+    else
+      return false;
+  } else
+    false
+  // return !isTyping && !(e.keyCode == 32);
 };
