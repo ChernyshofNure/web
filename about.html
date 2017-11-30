@@ -10,7 +10,6 @@
   <body>
     <div class="container nice-font">
       <h1 class="title">About</h1>
-      <button onclick="toggleSpoiler('tableabout');">Toggle</button>
       <table id="tableabout" align="center" class="info">
         <tr>
           <td>Name:</td>
@@ -25,8 +24,10 @@
           <td>19</td>
         </tr>
         <tr>
-          <td valign="top">Favorite Subjects:</td>
-          <td>
+          <td class="spoiler_hide" id="spoiler" onclick="toggleSpoiler(this, 'subjects');" valign="top">
+            Favorite Subjects:
+          </td>
+          <td class="spoilershow" id="subjects">
             <ul type="square">
               <li>Math</li> 
               <li>Probability</li> 
@@ -36,8 +37,10 @@
           </td>
         </tr>
         <tr>
-          <td valign="top">Programming languages<i>(and knowledge rate)</i>:</td>
-          <td>
+          <td class="spoiler_hide" id="spoiler" onclick="toggleSpoiler(this, 'languages');" valign="top">
+            Programming languages<i>(and knowledge rate)</i>:
+          </td>
+          <td class="spoilershow" id="languages">
             <ol type="I">
               <dl>
                 <li>
@@ -65,8 +68,10 @@
           <td>About 50 hours per week</td>
         </tr>
         <tr>
-          <td valign="top">Hobbies</td>
-          <td>
+          <td class="spoiler_hide" id="spoiler" onclick="toggleSpoiler(this, 'hobbies');" valign="top">
+            Hobbies
+          </td>
+          <td class="spoilershow" id="hobbies">
             <ul type="circle">
               <li>Video games</li>
               <li>Reading</li>

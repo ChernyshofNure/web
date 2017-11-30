@@ -10,7 +10,9 @@ let imagesUrls = [
 function renderImages() {
   for (let i=0; i<3; i++) {
     let img = document.getElementById(`profile-pic${i+1}`);
-    img.src = `img/${imagesUrls[i]}`;
+    if (img) {
+      img.src = `img/${imagesUrls[i]}`;
+    }
   }
 }
 
@@ -35,7 +37,9 @@ for (let i=0; i < images.length; i++) {
 }
 
 let shadow = document.getElementById('previewShadow');
- shadow.onclick = handleClickBlur;
+if (shadow) {
+  shadow.onclick = handleClickBlur;
+}
 
 function carousel(e) {
   if (!isPreviewing) {

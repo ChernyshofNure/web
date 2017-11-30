@@ -9,12 +9,15 @@
   margin-right: 8px;
 }
 
-.info tr:nth-child(even) td {
-  background-color: #212121;
+.info tr:nth-child(even) {
+  background: #212121;
+}
+
+.info td span {
+  background: none;
 }
 
 .info th, .info td {
-  background: #292B2E;
   padding: 5px;
   text-align: left;
   border: 0.2vw dashed #ccc;
@@ -35,6 +38,21 @@
   margin-left: 2%;
 }
 
-.info tr:hover td {
+/* .info tr:hover td {
   background: #9a9aba;
+} */
+
+.spoilershow {
+  display: none;
+}
+
+#spoiler {
+  cursor: pointer;
+}
+
+.spoiler_hide:before {
+  content: '+';
+}
+.spoiler_show:before {
+  content: '-';
 }

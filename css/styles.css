@@ -8,11 +8,11 @@
 @import 'nav.css';
 
 *, body {
-  background: #5D4D7A;
   color: white;
 }
 
 body {
+  background: #5D4D7A;
   padding-bottom: 30px;
 }
 
