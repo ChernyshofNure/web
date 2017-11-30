@@ -11,9 +11,15 @@
     <div class="container nice-font">
       <h3 class="title">Blog</h3>
       <form class="blog">
-        <input id="input" type="text" name="topic" placeholder="Topic"/>
-        <textarea id="input" style="resize:none" name="body" rows="8" cols="40" placeholder="Text"></textarea>
-        <input type="submit"/>
+        <input class="input" id="input" type="eamil" name="email" placeholder="Email"/>
+        <div class="error" id="email_error">^ Email is invalid</div>
+        <input class="input" id="input" type="text" name="phone" placeholder="Phone number"/>
+        <div class="error" id="phone_error">^ Phone number is invalid</div>
+        <input class="input" id="input" type="text" name="topic" placeholder="Topic"/>
+        <div class="error" id="topic_error">^ Topic can't be blank</div>
+        <textarea class="input" id="input" name="body" rows="8" cols="40" placeholder="Text"></textarea>
+        <div class="error" id="body_error">^ Text can't be blank</div>
+        <input id="submit" type="submit" disabled/>
       </form>
     </div>
     <div id="menuToggle">

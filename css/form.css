@@ -12,17 +12,25 @@ form.blog input, form.blog textarea {
   border: 1px dashed white;
   background: #292B2E;
   outline: none;
-  width: 100%
+  width: 100%;
+  margin-top: -1px;
+  /* border-color: #ce537a; */
 }
 
 form.blog input[type="submit"] {
+  margin-top: 23px;
   padding: 0.5em 2em;
   border: 1px dashed white;
   cursor: pointer;
 }
 
+form.blog input[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+
 form.blog textarea {
-  border-top: none;
+  margin-bottom: -3px;
+  resize:none;
 }
 
 form.blog textarea::-webkit-scrollbar {
@@ -38,4 +46,15 @@ form.blog textarea::-webkit-scrollbar-thumb {
   background-color: #6E5D8E;
   border-radius: 15px;
   outline: 1px solid slategrey;
+}
+
+.error {
+  display: none;
+  color: #ce537a;
+  border: 1px dashed #ce537a;
+  border-top: none;
+  padding: 5px;
+  font-size: 14px;
+  margin-top: -1px;
+  margin-bottom: 1px;
 }

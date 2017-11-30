@@ -11,4 +11,4 @@ dynamicallyLoadScript('js/shortcuts.js')
 dynamicallyLoadScript('js/spoilers.js')
 dynamicallyLoadScript('js/image_preview.js')
 dynamicallyLoadScript('js/tables.js')
-
+dynamicallyLoadScript('js/validation.js')
