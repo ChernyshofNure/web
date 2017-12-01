@@ -8,16 +8,6 @@
   letter-spacing: 1.2vw;
 }
 
-.nice-font i,
-.nice-font b,
-.nice-font ol,
-.nice-font ul,
-.nice-font dt,
-.nice-font dd,
-.nice-font dl,
-.nice-font li {
-  background: none;
-}
 
 .nice-font .title:before {
   content: "[";
@@ -61,6 +51,11 @@
 
 .nice-font pre b {
   color: #237EAD;
+}
+.nice-font pre mark {
+  background: #373040;
+  color: #dc752f;
+  font-weight: bold;
 }
 
 .nice-font pre strong {
@@ -130,4 +125,8 @@
   .nice-font pre strong {
     font-size: 2em;
   }
+}
+
+.nice-font pre details {
+  display: inline-block;
 }
