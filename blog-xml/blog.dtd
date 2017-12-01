@@ -1,0 +1,19 @@
+<!DOCTYPE posts
+[
+<!ELEMENT posts (post+)>
+<!ELEMENT post (title,body,published_at,author,files,tags,comments)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT published_at (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT files (image+)>
+<!ELEMENT files (audio+)>
+<!ELEMENT image (name)>
+<!ELEMENT audio (name)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT tags (tag+)>
+<!ELEMENT name (tag)>
+<!ELEMENT comments (comment+)>
+<!ELEMENT comment (text,author,published_at)>
+<!ELEMENT text (#PCDATA)>
+]>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="blog.xsl"?>
+<posts>
+  <post>
+    <title>Lorem ispum</title>
+    <body>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodddd</body>
+    <published_at>2017-12-01T18:00:00</published_at>
+    <author>Kappa</author>
+    <files>
+      <image><name>vohiyo.png</name></image>
+      <image><name>punoko.png</name></image>
+      <audio><name>Naruto.mp3</name></audio>
+    </files>
+    <tags>
+      <tag><name>Tag1</name></tag>
+      <tag><name>Tag2</name></tag>
+    </tags>
+    <comments>
+      <comment>
+        <text>Lorem ispum</text>
+        <author>Keepo</author>
+        <published_at>2017-12-01T19:00:00</published_at>
+      </comment>
+      <comment>
+        <text>Lorem ispum</text>
+        <author>KappaRoss</author>
+        <published_at>2017-12-01T20:00:00</published_at>
+      </comment>
+    </comments>
+  </post>
+  <post>
+    <title>Lorem ispum</title>
+    <body>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</body>
+    <published_at>2017-12-01T18:00:00</published_at>
+    <author>Kappa</author>
+    <files>
+      <image><name>vohiyo.png</name></image>
+      <image><name>punoko.png</name></image>
+      <audio><name>Naruto.mp3</name></audio>
+    </files>
+    <tags>
+      <tag><name>Tag1</name></tag>
+      <tag><name>Tag2</name></tag>
+    </tags>
+    <comments>
+      <comment>
+        <text>Lorem ispum</text>
+        <author>Keepo</author>
+        <published_at>2017-12-01T19:00:00</published_at>
+      </comment>
+      <comment>
+        <text>Lorem ispum</text>
+        <author>KappaRoss</author>
+        <published_at>2017-12-01T20:00:00</published_at>
+      </comment>
+    </comments>
+  </post>
+</posts>
