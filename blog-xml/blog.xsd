@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="posts">
+<xs:complexType>
+  <xs:sequence>
+    <xs:complexType name="post">
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="body" type="xs:string"/>
+      <xs:element name="author" type="xs:string"/>
+      <xs:element name="published_at" type="xs:string"/>
+    
+      <xs:complexType name="files">
+        <xs:sequence>
+          <xs:element name="image" type="xs:string"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element name="audio" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    
+      <xs:complexType name="tags">
+        <xs:complexType name="tag">
+          <xs:element name="name" type="xs:string"/>
+        </xs:complexType>
+      </xs:complexType>
+    
+      <xs:complexType name="comments">
+        <xs:sequence>
+          <xs:complexType name="comment">
+            <xs:element name="author" type="xs:string"/>
+            <xs:element name="text" type="xs:string"/>
+            <xs:element name="published_at" type="xs:string"/>
+          </xs:complexType>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:complexType>
+  </xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
