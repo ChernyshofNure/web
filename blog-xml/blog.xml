@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="blog.xsl"?>
 <posts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="blog.xsd">
-  <post>
+  <post post_id='1'>
     <title>Lorem ispum</title>
     <body>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodddd</body>
     <published_at>2017-12-01T18:00:00</published_at>
-    <author>Kappa</author>
+    <author user_id='1'>Kappa</author>
     <files>
-      <image><name>vohiyo.png</name></image>
-      <image><name>punoko.png</name></image>
-      <audio><name>Naruto.mp3</name></audio>
+      <image image_id='1'><name>vohiyo.png</name></image>
+      <image image_id='2'><name>punoko.png</name></image>
+      <audio audio_id='1'><name>Naruto.mp3</name></audio>
     </files>
     <tags>
-      <tag><name>Tag1</name></tag>
-      <tag><name>Tag2</name></tag>
+      <tag tag_id='1'><name>Tag1</name></tag>
+      <tag tag_id='2'><name>Tag2</name></tag>
     </tags>
     <comments>
-      <comment>
+      <comment comment_id='1'>
         <text>Lorem ispum</text>
-        <author>Keepo</author>
+        <author user_id='2'>Keepo</author>
         <published_at>2017-12-01T19:00:00</published_at>
       </comment>
-      <comment>
+      <comment comment_id='2'>
         <text>Lorem ispum</text>
-        <author>KappaRoss</author>
+        <author user_id='3'>KappaRoss</author>
         <published_at>2017-12-01T20:00:00</published_at>
       </comment>
     </comments>
   </post>
-  <post>
+  <post post_id='2'>
     <title>Lorem ispum</title>
     <body>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</body>
     <published_at>2017-12-01T18:00:00</published_at>
-    <author>Kappa</author>
+    <author user_id='1'>Kappa</author>
     <files>
-      <image><name>vohiyo.png</name></image>
-      <image><name>punoko.png</name></image>
-      <audio><name>Naruto.mp3</name></audio>
+      <image image_id='1'><name>vohiyo.png</name></image>
+      <image image_id='2'><name>punoko.png</name></image>
+      <audio audio_id='1'><name>Naruto.mp3</name></audio>
     </files>
     <tags>
-      <tag><name>Tag1</name></tag>
-      <tag><name>Tag2</name></tag>
+      <tag tag_id='1'><name>Tag1</name></tag>
+      <tag tag_id='2'><name>Tag2</name></tag>
     </tags>
     <comments>
-      <comment>
+      <comment comment_id='3'>
         <text>Lorem ispum</text>
-        <author>Keepo</author>
+        <author user_id='2'>Keepo</author>
         <published_at>2017-12-01T19:00:00</published_at>
       </comment>
-      <comment>
+      <comment comment_id='4'>
         <text>Lorem ispum</text>
-        <author>KappaRoss</author>
+        <author user_id='3'>KappaRoss</author>
         <published_at>2017-12-01T20:00:00</published_at>
       </comment>
     </comments>
