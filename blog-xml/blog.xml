@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="blog.xsl"?>
-<posts>
+<posts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="blog.xsd">
   <post>
     <title>Lorem ispum</title>
     <body>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmoLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodddd</body>

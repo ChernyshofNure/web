@@ -1,41 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 <xs:element name="posts">
-<xs:complexType>
-  <xs:sequence>
-    <xs:complexType name="post">
-      <xs:element name="title" type="xs:string"/>
-      <xs:element name="body" type="xs:string"/>
-      <xs:element name="author" type="xs:string"/>
-      <xs:element name="published_at" type="xs:string"/>
-    
-      <xs:complexType name="files">
-        <xs:sequence>
-          <xs:element name="image" type="xs:string"/>
-        </xs:sequence>
-        <xs:sequence>
-          <xs:element name="audio" type="xs:string"/>
-        </xs:sequence>
-      </xs:complexType>
-    
-      <xs:complexType name="tags">
-        <xs:complexType name="tag">
-          <xs:element name="name" type="xs:string"/>
-        </xs:complexType>
-      </xs:complexType>
-    
-      <xs:complexType name="comments">
-        <xs:sequence>
-          <xs:complexType name="comment">
-            <xs:element name="author" type="xs:string"/>
-            <xs:element name="text" type="xs:string"/>
-            <xs:element name="published_at" type="xs:string"/>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="post" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="title" type="xs:string"></xs:element>
+            <xs:element name="body" type="xs:string"></xs:element>
+            <xs:element name="published_at" type="xs:dateTime"></xs:element>
+            <xs:element name="author" type="xs:string"></xs:element>
+            <xs:element name="files">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="image" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="name" type="xs:string"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  <xs:element name="audio" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="name" type="xs:string"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            <xs:element name="tags">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="tag" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="name" type="xs:string"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            <xs:element name="comments">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="comment" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="text" type="xs:string"></xs:element>
+                        <xs:element name="author" type="xs:string"></xs:element>
+                        <xs:element name="published_at" type="xs:dateTime"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
           </xs:complexType>
-        </xs:sequence>
-      </xs:complexType>
+        </xs:element>
+      </xs:sequence>
     </xs:complexType>
-  </xs:sequence>
-</xs:complexType>
-</xs:element>
+  </xs:element>
 </xs:schema>

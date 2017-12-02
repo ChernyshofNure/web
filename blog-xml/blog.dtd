@@ -1,19 +1,61 @@
-<!DOCTYPE posts
-[
-<!ELEMENT posts (post+)>
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT posts (post)+>
+<!ATTLIST posts
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT post (title,body,published_at,author,files,tags,comments)>
+<!ATTLIST post
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT body (#PCDATA)>
-<!ELEMENT published_at (#PCDATA)>
-<!ELEMENT author (#PCDATA)>
-<!ELEMENT files (image+)>
-<!ELEMENT files (audio+)>
+<!ATTLIST body
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT files (image+,audio+)>
+<!ATTLIST files
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT tags (tag)+>
+<!ATTLIST tags
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT comments (comment)+>
+<!ATTLIST comments
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT image (name)>
+<!ATTLIST image
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT audio (name)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT tags (tag+)>
-<!ELEMENT name (tag)>
-<!ELEMENT comments (comment+)>
+<!ATTLIST audio
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT tag (name)>
+<!ATTLIST tag
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT comment (text,author,published_at)>
+<!ATTLIST comment
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT text (#PCDATA)>
-]>
+<!ATTLIST text
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT published_at (#PCDATA)>
+<!ATTLIST published_at
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
